@@ -150,12 +150,15 @@ body {
 .header-phone:hover {
   color: var(--accent-color);
 }
-.header-icon {
+/* .navigation-item-icon {
+  margin-right: 10px;
+} */
+/* .header-icon {
 }
 .navigation-item:hover .header-icon,
 .navigation-item:focus .header-icon {
   fill: curentcolor;
-}
+} */
 /* ----------------main----------------*/
 
 .hero {
@@ -238,7 +241,8 @@ body {
 }
 
 .team,
-.galery {
+.galery,
+.clients {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -277,6 +281,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team-list .team-item:last-child {
   margin-right: 0;
@@ -287,7 +292,7 @@ body {
 }
 
 .team-person {
-  padding: 30px 0;
+  padding: 30px 0 16px 0;
 }
 .name {
   margin-bottom: 10px;
@@ -301,6 +306,56 @@ body {
   font-size: 16px;
   line-height: 1.19;
 }
+.features-icon {
+  display: block;
+  align-items: center;
+  object-position: center;
+  margin: auto;
+}
+.features-icon-bg {
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-bg-color);
+  padding-top: 25px;
+  margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+.social-item:not(last-child) {
+  margin-right: 10px;
+}
+.social-icon {
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+}
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--primary-white-color);
+}
+
 /* ----------------footer----------------*/
 
 .footer-container {
